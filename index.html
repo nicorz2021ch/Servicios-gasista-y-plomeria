@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasista Matriculado y Plomería | Servicios Seguros</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado / Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">Gasista Matriculado</span>
+                <h1>Soluciones Seguras en Gas y Plomería para tu Hogar o Proyecto</h1>
+                <p>Instalaciones, reparaciones y habilitaciones. Atención a domicilios y obras de construcción con total garantía.</p>
+                <a href="#contacto" class="btn btn-primary">Solicitar Presupuesto</a>
+                <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-whatsapp">📲 WhatsApp Urgencias</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="services section">
+        <div class="container">
+            <h2 class="section-title">Mis Servicios</h2>
+            <div class="grid">
+                <!-- Tarjeta Servicio 1 -->
+                <div class="card">
+                    <div class="card-icon">🏠</div>
+                    <h3>Ámbito Domiciliario</h3>
+                    <ul>
+                        <li>Detección y reparación de fugas de gas y agua.</li>
+                        <li>Instalación de estufas, cocinas y termotanques.</li>
+                        <li>Destapaciones y solución a filtraciones.</li>
+                        <li>Adecuación a normativas vigentes.</li>
+                    </ul>
+                </div>
+                <!-- Tarjeta Servicio 2 -->
+                <div class="card">
+                    <div class="card-icon">🏗️</div>
+                    <h3>Obras de Construcción</h3>
+                    <ul>
+                        <li>Tendido de red de gas y agua desde cero.</li>
+                        <li>Desagües cloacales y pluviales.</li>
+                        <li>Planos, firmas y trámites de habilitación.</li>
+                        <li>Ensayos de presión y hermeticidad.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Confianza -->
+    <section class="trust section bg-light">
+        <div class="container">
+            <h2 class="section-title">Tu tranquilidad es mi prioridad</h2>
+            <div class="grid grid-4">
+                <div class="trust-item">
+                    <h4>✅ Matrícula Habilitante</h4>
+                    <p>Profesional certificado, cumpliendo normas de seguridad estrictas.</p>
+                </div>
+                <div class="trust-item">
+                    <h4>✅ Seguridad Garantizada</h4>
+                    <p>Uso de materiales homologados de primera calidad.</p>
+                </div>
+                <div class="trust-item">
+                    <h4>✅ Transparencia</h4>
+                    <p>Presupuestos claros desde el primer momento, sin sorpresas.</p>
+                </div>
+                <div class="trust-item">
+                    <h4>✅ Prolijidad</h4>
+                    <p>Respeto por tu hogar u obra, dejando todo impecable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact section">
+        <div class="container">
+            <h2 class="section-title">¿Necesitas un profesional de confianza?</h2>
+            <p class="text-center mb-2">Completa el formulario y me pondré en contacto contigo a la brevedad.</p>
+            
+            <form id="contactForm" class="form">
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono / WhatsApp</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="servicio">Tipo de Servicio</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona una opción...</option>
+                        <option value="domicilio">Servicio en Domicilio</option>
+                        <option value="obra">Obra de Construcción</option>
+                        <option value="urgencia">Urgencia (Fuga/Rotura)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Describe el problema o proyecto</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="privacidad" required>
+                    <label for="privacidad">Acepto las <a href="#legales" id="openModal">Políticas de Privacidad y Condiciones de Seguridad</a>.</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar Consulta</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal de Textos Legales -->
+    <div id="legalModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Condiciones de Seguridad y Privacidad</h2>
+            <div class="modal-body">
+                <h3>🛡️ Política de Privacidad</h3>
+                <p><strong>Qué datos recopilamos:</strong> nombre, teléfono/WhatsApp, tipo de servicio y el mensaje que nos escribís al completar el formulario.</p>
+                <p><strong>Para qué los usamos:</strong> únicamente para responder tu consulta, coordinar visitas, elaborar presupuestos y dar seguimiento al trabajo solicitado.</p>
+                <p><strong>Con quién los compartimos:</strong> con nadie. No vendemos ni cedemos tu información a terceros, salvo que una autoridad competente lo exija por ley.</p>
+                <p><strong>Cuánto tiempo los conservamos:</strong> mientras dure la relación comercial y el tiempo necesario para cumplir obligaciones legales o fiscales.</p>
+                <p><strong>Tus derechos:</strong> podés pedirnos en cualquier momento acceder, corregir o eliminar tus datos escribiéndonos por WhatsApp.</p>
+
+                <h3>🔒 Política de Seguridad</h3>
+                <p><strong>Protección de la información:</strong> los datos que nos enviás se transmiten y almacenan de forma protegida, con acceso restringido solo al personal responsable de atender tu consulta.</p>
+                <p><strong>Seguridad en el trabajo:</strong> todas las instalaciones y reparaciones de gas se realizan siguiendo las normativas vigentes, con materiales homologados y bajo la supervisión y firma de un Gasista Matriculado.</p>
+                <p><strong>Ensayos y verificación:</strong> se realizan pruebas de hermeticidad y presión antes de habilitar cualquier instalación, garantizando que no existan riesgos de fuga.</p>
+                <p><strong>Ante una urgencia:</strong> si detectás olor a gas, el primer paso es cortar la llave de paso, ventilar el ambiente, no accionar interruptores ni encender fuego, y contactarnos de inmediato.</p>
+
+                <h3>⚠️ Condiciones de Servicio</h3>
+                <p><strong>Normativas:</strong> Los trabajos de gas se realizan bajo supervisión y firma de Gasista Matriculado.<br>
+                <strong>Garantía:</strong> Utilizamos materiales homologados. Todo trabajo cuenta con garantía escrita sobre la mano de obra.<br>
+                <strong>Urgencias:</strong> En fugas de gas, el objetivo prioritario es la neutralización inmediata del riesgo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>Atención:</strong> Lunes a Viernes 8:00 a 18:00hs | Urgencias 24hs.</p>
+            <p>&copy; 2026 Tu Nombre/Empresa - Gas y Plomería.</p>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
