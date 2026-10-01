@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Descomenta el bloque de abajo y pon tu número si prefieres que el form abra WhatsApp
         
         /*
-        const numeroWhatsApp = "5491100000000"; // Reemplaza con tu número
+        const numeroWhatsApp = "5493489592140"; // Reemplaza con tu número
         const textoWP = `Hola, soy ${nombre}. Necesito un servicio de ${servicio}. Mi problema es: ${mensaje}. Mi teléfono es ${telefono}.`;
         const urlWP = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoWP)}`;
         window.open(urlWP, '_blank');
