@@ -48,18 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const servicio = document.getElementById('servicio').value;
         const mensaje = document.getElementById('mensaje').value;
 
-        // Opcional: Redirigir el mensaje directamente a tu WhatsApp
-        // Descomenta el bloque de abajo y pon tu número si prefieres que el form abra WhatsApp
-        
-        /*
-        const numeroWhatsApp = "5493489592140"; // Reemplaza con tu número
+        // Redirige el mensaje directamente a WhatsApp
+        const numeroWhatsApp = "5493489592140";
         const textoWP = `Hola, soy ${nombre}. Necesito un servicio de ${servicio}. Mi problema es: ${mensaje}. Mi teléfono es ${telefono}.`;
         const urlWP = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoWP)}`;
         window.open(urlWP, '_blank');
-        */
 
-        // Mensaje de éxito simulado
-        alert(`¡Gracias ${nombre}! Tu consulta ha sido recibida. Nos comunicaremos al ${telefono} a la brevedad.`);
         form.reset(); // Limpia el formulario
     });
 });
